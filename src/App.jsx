@@ -3,10 +3,19 @@ import { motion, AnimatePresence } from 'framer-motion';
 import './App.css'
 import Projects from './pages/Projects.jsx'
 import AboutMe from './pages/AboutMe.jsx'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 function App() {
-  const [activeTab, setActiveTab] = useState('about')
+  return (
+    <Router>
+      <AppContent />
+    </Router>
+  );
+}
 
+function AppContent() {
+  const location = useLocation();
   return (
     <div className="w-full h-full flex flex-col">
       <nav className="w-full">
@@ -18,52 +27,51 @@ function App() {
               </div>
             </div>
             <div className="absolute inset-y-0 right-0 flex flex-col sm:flex-row items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-              <button
-                type="button"
-                className={`mr-4 px-3 py-2 rounded-md text-xl font-medium transition-colors duration-200 ${activeTab === 'about' ? 'text-blue-400 underline underline-offset-3' : 'text-black hover:text-blue-400'}`}
-                onClick={() => setActiveTab('about')}
+              <Link
+                to="/"
+                className={`mr-4 px-3 py-2 rounded-md text-xl font-medium transition-colors duration-200 ${location.pathname === '/' ? 'text-blue-400 underline underline-offset-3' : 'text-black hover:text-blue-400'}`}
               >
                 About
-              </button>
-              <button
-                type="button"
-                className={`mr-4 px-3 py-2 rounded-md text-xl font-medium transition-colors duration-200 ${activeTab === 'projects' ? 'text-blue-400 underline underline-offset-3' : 'text-black hover:text-blue-400'}`}
-                onClick={() => setActiveTab('projects')}
+              </Link>
+              <Link
+                to="/projects"
+                className={`mr-4 px-3 py-2 rounded-md text-xl font-medium transition-colors duration-200 ${location.pathname.includes('/projects') ? 'text-blue-400 underline underline-offset-3' : 'text-black hover:text-blue-400'}`}
               >
                 Projects
-              </button>
+              </Link>
             </div>
           </div>
         </div>
       </nav>
-      <main className="flex-1 w-full">
-        <AnimatePresence mode="wait">
-          {activeTab === 'about' && (
-            <motion.div
-              key="about"
-              initial={{ opacity: 0, x: -30 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: 30 }}
-              transition={{ duration: 0.3 }}
-            >
-              <AboutMe />
-            </motion.div>
-          )}
-          {activeTab === 'projects' && (
-            <motion.div
-              key="projects"
-              initial={{ opacity: 0, x: 30 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -30 }}
-              transition={{ duration: 0.5 }}
-            >
-              <Projects />
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </main>
-    </div>
-  )
+        <main className="flex-1 w-full">
+          <AnimatePresence mode="wait">
+            <Routes>
+              <Route path="/" element={
+                <motion.div
+                  key="about"
+                  initial={{ opacity: 0, x: -30 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: 30 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <AboutMe />
+                </motion.div>
+              } />
+              <Route path="/projects" element={
+                <motion.div
+                  key="projects"
+                  initial={{ opacity: 0, x: 30 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -30 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <Projects />
+                </motion.div>
+              } />
+            </Routes>
+          </AnimatePresence>
+        </main>
+      </div>
+  );
 }
-
 export default App

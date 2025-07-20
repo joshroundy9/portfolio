@@ -9,13 +9,13 @@ function AboutMe() {
     <div className=''>
     <div className="p-8">
         <div className="flex items-center lg:flex-row md:flex-row sm:flex-col flex-col justify-center">
-            <img src={profilePhoto} alt="Profile" className=" h-auto w-1/2 mr-6 lg:w-sm md:w-1/3 sm:w-1/2 sm:pb-2" />
+            <img src={profilePhoto} alt="Profile" className=" h-auto w-2/3 mr-6 lg:w-sm md:w-sm sm:w-1/2 sm:pb-2" />
             <div className="flex flex-col mb-6 justify-start text-start items-start lg:max-w-3xl">
                 <h1 className=" text-3xl md:text-5xl font-bold text-gray-900 mb-4">Hello, I'm Josh.</h1>
                 <p className="text-gray-600 text-lg leading-relaxed">
-                    Hello! 👋 I am a Software Engineer III at <a href='https://www.usaa.com/' className="text-gray-600 underline">USAA</a> with a B.S. in Computer Science from the University at Albany.</p>
+                    Hello! 👋 I am a Software Engineer III at <a href='https://www.usaa.com/' target="_blank" className="underline">USAA</a> with a B.S. in Computer Science from the University at Albany.</p>
                 <p className="text-gray-600 text-lg leading-relaxed mt-2">
-I have over 10 years of development experience which began when I started developing Minecraft server plugins with the Bukkit API at age 11. Since then, I've gained diverse professional experience — from USAA and the <a href='https://www.ny.gov/' className="text-gray-600 underline">New York State Government</a> to making contributions at a local startup. </p>
+I have over 10 years of development experience which began when I started developing Minecraft server plugins with the <a href='https://dev.bukkit.org/' target="_blank" className="underline">Bukkit API</a> at age 11. Since then, I've gained diverse professional experience — from USAA and the <a href='https://www.ny.gov/' target="_blank" className="underline">New York State Government</a> to making contributions at a local startup. </p>
                 <p className="text-gray-600 text-lg leading-relaxed mt-2">
 Outside of software development you can find me at the gym, on the beach, exploring hiking trails, or hitting the slopes ⛷️.
                 </p>
