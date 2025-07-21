@@ -1,7 +1,7 @@
 import cherryExample from '../assets/cherryexample.png';
 import interpreterExample from '../assets/interpreterexample.png';
 import portfolioExample from '../assets/portfolioexample.png';
-import linkIcon from '../assets/linkicon.png';
+import liveIcon from '../assets/liveicon.png';
 import youtubeIcon from '../assets/youtubeicon.png';
 import githubIcon from '../assets/githubicon.png';
 import { Link } from 'react-router-dom';
@@ -27,7 +27,7 @@ function Projects() {
             </div>
             <div className='flex flex-row items-center justify-center gap-8 mt-8'>
               <a href="https://cherry.joshroundy.dev" target="_blank" rel="noopener noreferrer" className="text-blue-500 mr-1 text-sm underline underline-offset-3">
-                <img src={linkIcon} alt="Link" className="w-8 h-8" />
+                <img src={liveIcon} alt="Link" className="w-8 h-8" />
               </a>
               <a href="https://www.youtube.com/watch?v=IligeviHT-M" target="_blank" rel="noopener noreferrer" className="text-blue-500 mr-1 text-sm underline underline-offset-3">
                 <img src={youtubeIcon} alt="Link" className="w-10 h-10" />
@@ -72,9 +72,9 @@ function Projects() {
             </div>
             <div className='flex flex-row items-center justify-center gap-8 mt-8'>
               <a href="https://www.joshroundy.dev" target="_blank" rel="noopener noreferrer" className="text-blue-500 mr-1 text-sm underline underline-offset-3">
-                <img src={linkIcon} alt="Link" className="w-8 h-8" />
+                <img src={liveIcon} alt="Link" className="w-8 h-8" />
               </a>
-              <a href="https://github.com/joshroundy9/Portfolio" target="_blank" rel="noopener noreferrer" className="text-blue-500 mr-1 text-sm underline underline-offset-3">
+              <a href="https://github.com/joshroundy9/portfolio" target="_blank" rel="noopener noreferrer" className="text-blue-500 mr-1 text-sm underline underline-offset-3">
                 <img src={githubIcon} alt="Link" className="w-10 h-10" />
               </a>
             </div>
