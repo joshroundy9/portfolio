@@ -13,3 +13,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.font-jomhuria {
+  font-family: 'Jomhuria', cursive;
+}
