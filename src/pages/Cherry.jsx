@@ -107,8 +107,8 @@ function Cherry() {
                         <ul className="list-disc list-inside mt-2 text-lg">
                             <li>HTTPS with SSL/TLS for secure data transmission</li>
                             <li>JWT authentication for secure user sessions</li>
-                            <li>EC2 Environment variables for passwords and API keys</li>
-                            <li>Users can only access their own data with a JWT UserID header match</li>
+                            <li>Environment variables for passwords and API keys</li>
+                            <li>Users can only access their own data with a JWT-UserID header match</li>
                         </ul>
 
                     </p>
