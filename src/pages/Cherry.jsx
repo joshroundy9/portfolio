@@ -4,18 +4,21 @@ import githubIcon from '../assets/githubicon.png';
 import cherryIcon from '../assets/cherryicon.png';
 
 import cherryDBDiagram from '../assets/cherrydbdiagram.JPEG';
+import cherryAWSDiagram from '../assets/cherryawsdiagram.png';
+import delicateArch from '../assets/delicatearch.JPEG';
 import { useState } from 'react';
 
 function Cherry() {
-  const [showDiagram, setShowDiagram] = useState(false);
+  const [showAWSDiagram, setShowAWSDiagram] = useState(false);
+  const [showDBDiagram, setShowDBDiagram] = useState(false);
   return (
     <div className="p-4 sm:p-8 mt-4 w-full flex items-start justify-center h-screen">
       <div className="w-full flex flex-col items-center justify-center">
         <div className="flex flex-row items-center justify-center gap-4">
-            <h1 className="flex flex-row text-6xl pt-2 font-bold text-red-600 font-jomhuria">
+            <a href="https://cherry.joshroundy.dev" target="_blank" rel="noopener noreferrer" className="flex flex-row text-6xl pt-2 font-bold text-red-600 font-jomhuria">
                 CHERRY 
                 <img src={cherryIcon} alt="Link" className="w-10 h-10" />
-            </h1>
+            </a>
             <div className='flex flex-row items-center justify-center gap-6 '>
                 <a href="https://cherry.joshroundy.dev" target="_blank" rel="noopener noreferrer" className="text-blue-500 mr-1 text-sm underline underline-offset-3">
                 <img src={liveIcon} alt="Link" className="w-8 h-8 transition-transform duration-300 hover:scale-110" />
@@ -36,6 +39,22 @@ function Cherry() {
               <span className="text-blue-500 text-sm underline underline-offset-3">AWS</span>
             </div>
         <div className="w-full flex flex-col items-start justify-start max-w-7xl text-start">
+            <div className='flex-1'>
+                    <h3 className=" text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
+                        Introduction
+                    </h3>
+                    <p className="text-gray-600 text-lg mt-4 mb-8">
+                    I love going to the gym and progressing my strength
+                    and physique, but every time I've looked into meal
+                    tracking apps, I found them to be too time consuming
+                    and not worth the effort. So I decided to build my own
+                    meal tracking website that would be easy to use and
+                    speed up the meal entry process.
+                    </p>
+                    <p className="text-gray-600 text-lg mt-4 mb-8">
+                        With AI growing so fast and becoming more accessible, I wanted to leverage it to make meal tracking easier and fix the problems I had with existing apps.
+                    </p>
+                </div>
             <div className='flex flex-col md:flex-row justify-between items-center w-full gap-5 mb-8 md:mb-12'>
                 <div className='md:max-w-2xl flex-1'>
                     <h3 className=" text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
@@ -49,8 +68,8 @@ function Cherry() {
                     <p className="text-gray-600 text-lg mt-4 mb-8">
                     In addition, CHERRY provides users with a weekly,
                     monthly, and yearly graphs of their nutritional 
-                    and weight data, allowing them to adjust their
-                    diet and exercise plans accordingly.
+                    and weight data and allows them to manually add 
+                    food items and easily re-add them to future meals.
                     </p>
                 </div>
                 <div className='h-52 w-sm md:h-80 md:w-lg'>
@@ -67,23 +86,23 @@ function Cherry() {
                     </div>
                     
                     <p className="text-gray-600 text-lg mt-4">
-                    CHERRY is my first personal full-stack project,
+                    CHERRY is my first solo full-stack project,
                     so I wanted to choose a tech stack with a good balance of familiarity and new challenges. Utilizing the OpenAI API was a no brainer because it allowed me to leverage advanced AI capabilities without having to build them from scratch. I chose <a href='https://spring.io/projects/spring-boot' target="_blank" className="underline">Spring Boot</a> for the backend because I already had
-                    professional experience with it and because my planned back end was relatively simple, I could put all my business logic in one Spring application vs using microservices (ex: AWS Lambda). I chose <a href='https://react.dev/' target="_blank" className="underline">React.js</a> for the frontend because it is very popular, and I wanted to learn it.
+                    professional experience with it and since my planned back end was relatively simple, I could put all my business logic in one Spring application vs using microservices (ex: AWS Lambda). I chose <a href='https://react.dev/' target="_blank" className="underline">React.js</a> for the frontend because it is very popular, and I wanted to learn it.
                     </p>
                     <p className="text-gray-600 text-lg mt-4 mb-8">
                     I designed a simple, modern UI with <a href='https://www.figma.com/design/' target="_blank" className="underline">Figma</a> that would be easy to use on both desktop and mobile devices.
                     </p>
                 </div>
                 <div className='h-64 w-sm md:h-96 md:w-lg'>
-                    <button onClick={() => setShowDiagram(true)} className="focus:outline-none">
+                    <button onClick={() => setShowDBDiagram(true)} className="focus:outline-none">
                         <img src={cherryDBDiagram} alt="Database Diagram" className="w-full h-auto max-w-lg cursor-zoom-in" />
                     </button>
                 </div>
-                {showDiagram && (
-                  <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80" onClick={() => setShowDiagram(false)}>
+                {showDBDiagram && (
+                  <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80" onClick={() => setShowDBDiagram(false)}>
                     <img src={cherryDBDiagram} alt="Database Diagram Expanded" className="max-h-[90vh] max-w-[90vw] rounded shadow-lg cursor-zoom-out" />
-                    <button onClick={() => setShowDiagram(false)} className="absolute top-4 right-4 text-white text-3xl font-bold">&times;</button>
+                    <button onClick={() => setShowDBDiagram(false)} className="absolute top-4 right-4 text-white text-3xl font-bold">&times;</button>
                   </div>
                 )}
             </div>
@@ -114,16 +133,38 @@ function Cherry() {
                     </p>
                 </div>
                 <div className='h-64 w-sm md:h-96 md:w-lg'>
-                    <button onClick={() => setShowDiagram(true)} className="focus:outline-none">
-                        <img src={cherryDBDiagram} alt="Database Diagram" className="w-full h-auto max-w-lg cursor-zoom-in" />
+                    <button onClick={() => setShowAWSDiagram(true)} className="focus:outline-none">
+                        <img src={cherryAWSDiagram} alt="Database Diagram" className="w-full h-auto max-w-lg cursor-zoom-in" />
                     </button>
                 </div>
-                {showDiagram && (
-                  <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80" onClick={() => setShowDiagram(false)}>
-                    <img src={cherryDBDiagram} alt="Database Diagram Expanded" className="max-h-[90vh] max-w-[90vw] rounded shadow-lg cursor-zoom-out" />
-                    <button onClick={() => setShowDiagram(false)} className="absolute top-4 right-4 text-white text-3xl font-bold">&times;</button>
+                {showAWSDiagram && (
+                  <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80" onClick={() => setShowAWSDiagram(false)}>
+                    <img src={cherryAWSDiagram} alt="AWS Diagram Expanded" className="max-h-[90vh] max-w-[90vw] rounded shadow-lg cursor-zoom-out" />
+                    <button onClick={() => setShowAWSDiagram(false)} className="absolute top-4 right-4 text-white text-3xl font-bold">&times;</button>
                   </div>
                 )}
+            </div>
+            <div className='flex flex-col md:flex-row justify-between items-center w-full gap-5 mb-8 md:mb-12'>
+                <div className='md:max-w-2xl w-full flex flex-col'>
+                    <h3 className=" text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
+                        Conclusion & Lessons Learned
+                    </h3>
+                    <p className="text-gray-600 text-lg mt-4">
+                        Building CHERRY was a valuable learning experience that reinforced my understanding of full-stack development and cloud deployment. The most important skills I learned were how to use
+                        React.js, how to manually deploy a full-stack application on AWS, and how to implement security best practices in a web application (HTTPS, JWT, and Data Security).
+                    </p>
+                    <p className="text-gray-600 text-lg mt-4 mb-8">
+                        I think I made a few mistakes in planning CHERRY,
+                        such as choosing to build the idea as a web app instead of a mobile app, and not utilizing
+                        Tailwind CSS for styling. However, I am proud of the final product and the skills I gained while building it.
+                    </p>
+                    <p className="text-gray-600 text-lg mt-4 mb-8">
+                        <span className='font-bold'>THANK YOU FOR READING!!!</span> If you have any questions or feedback, feel free to reach out to me via <a className="text-blue-500 underline" href="mailto:joshroundy9@gmail.com">email</a>.
+                    </p>
+                </div>
+                <div className='h-64 w-sm md:h-80 md:w-lg md:mb-12'>
+                    <img src={delicateArch} alt="Database Diagram" className="w-full h-auto max-w-lg" />
+                </div>
             </div>
         </div>
       </div>

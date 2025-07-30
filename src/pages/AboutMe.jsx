@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 function AboutMe() {
   return (
-    <div className=''>
+    <div className='sm:mt-12'>
     <div className="p-8">
         <div className="flex items-center lg:flex-row md:flex-row sm:flex-col flex-col justify-center">
             <img src={profilePhoto} alt="Profile" className=" h-auto w-2/3 mr-6 lg:w-sm md:w-sm sm:w-1/2 sm:pb-2" />

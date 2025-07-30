@@ -18,8 +18,8 @@ function App() {
 function AppContent() {
   const location = useLocation();
   return (
-    <div className="w-full h-full flex flex-col">
-      <nav className="w-full">
+    <main className="w-full h-full flex flex-col">
+      <nav className="w-full sticky top-0 bg-white/50 md:bg-white z-50 backdrop-blur">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="relative flex h-20 items-center justify-between">
             <div className="flex flex-1 items-center justify-start">
@@ -83,7 +83,7 @@ function AppContent() {
             </Routes>
           </AnimatePresence>
         </main>
-      </div>
+      </main>
   );
 }
 export default App
