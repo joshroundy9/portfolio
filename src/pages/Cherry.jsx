@@ -46,9 +46,9 @@ function Cherry() {
                     <p className="text-gray-600 text-lg mt-4 mb-8">
                     I love going to the gym and progressing my strength
                     and physique, but every time I've looked into meal
-                    tracking apps, I found them to be too time consuming
+                    tracking solutions, I found them to be too time consuming
                     and not worth the effort. So I decided to build my own
-                    meal tracking website that would be easy to use and
+                    meal tracking web app that would be easy to use and
                     speed up the meal entry process.
                     </p>
                     <p className="text-gray-600 text-lg mt-4 mb-8">
