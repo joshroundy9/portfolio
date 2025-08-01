@@ -23,7 +23,7 @@ function Projects() {
                 CHERRY 
                 <img src={cherryIcon} alt="Link" className="w-10 h-10" />
             </div>
-            <p className="text-gray-600 text-lg">A full-stack AI-powered meal tracking web-app with analytics.</p>
+            <p className="text-gray-600 text-lg">A full-stack AI-powered meal tracking web app with analytics.</p>
             <div className='flex flex-row items-center justify-center gap-4 pt-4'>
               <span className="text-blue-500 text-sm underline underline-offset-3">REST API</span>
               <span className="text-blue-500 text-sm underline underline-offset-3">React.js</span>

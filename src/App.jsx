@@ -20,15 +20,15 @@ function AppContent() {
   const location = useLocation();
   return (
     <main className="w-full h-full flex flex-col">
-      <nav className="w-full sticky top-0 bg-white/50 md:bg-white z-50 backdrop-blur">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <nav className="w-full sticky top-0 bg-white/50 md:bg-white z-50 backdrop-blur lg:px-4">
+        <div className="mx-auto max-w-7xl px-4 lg:p-0">
           <div className="relative flex h-20 items-center justify-between">
             <div className="flex flex-1 items-center justify-start">
               <div className="flex shrink-0 items-center">
-                <span className="ml-2 text-2xl sm:text-4xl font-bold text-black">Josh Roundy</span>
+                <span className="text-2xl sm:text-4xl font-bold text-black">Josh Roundy</span>
               </div>
             </div>
-            <div className="absolute inset-y-0 right-0 flex flex-col sm:flex-row items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+            <div className="absolute inset-y-0 right-0 flex flex-col sm:flex-row items-center pr-2 sm:pr-0 sm:static sm:inset-auto sm:ml-6">
               <Link
                 to="/"
                 className={`mr-4 px-3 py-2 rounded-md text-xl font-medium transition-colors duration-200 ${location.pathname === '/' ? 'text-blue-400 underline underline-offset-3' : 'text-black hover:text-blue-400'}`}
@@ -37,7 +37,7 @@ function AppContent() {
               </Link>
               <Link
                 to="/projects"
-                className={`mr-4 px-3 py-2 rounded-md text-xl font-medium transition-colors duration-200 ${location.pathname.includes('/projects') ? 'text-blue-400 underline underline-offset-3' : 'text-black hover:text-blue-400'}`}
+                className={`sm:mr-0 mr-4 px-3 py-2 rounded-md text-xl font-medium transition-colors duration-200 ${location.pathname.includes('/projects') ? 'text-blue-400 underline underline-offset-3' : 'text-black hover:text-blue-400'}`}
               >
                 Projects
               </Link>

@@ -1,15 +1,13 @@
-import liveIcon from '../assets/liveicon.png';
 import youtubeIcon from '../assets/youtubeicon.png';
 import githubIcon from '../assets/githubicon.png';
 import shankIcon from '../assets/shanklogo.png';
 
 import cherryDBDiagram from '../assets/cherrydbdiagram.JPEG';
-import cherryAWSDiagram from '../assets/cherryawsdiagram.png';
 import sandDunes from '../assets/sanddunes.png';
 import { useState } from 'react';
+import { Link } from 'react-router-dom'
 
 function Shank() {
-  const [showAWSDiagram, setShowAWSDiagram] = useState(false);
   const [showDBDiagram, setShowDBDiagram] = useState(false);
   return (
     <div className="p-4 sm:p-8 mt-4 w-full flex items-start justify-center h-screen">
@@ -59,10 +57,10 @@ function Shank() {
                     <p className="text-gray-600 text-lg mt-4 mb-8">
                     Shank is a scripted, indented, and typed general purpose programming language
                     that is designed to be easy to read and write. It has a simple syntax that is
-                    similar to Python, but with some unique quirks. For example, functions
+                    similar to <a href="https://www.python.org/" target="_blank" className="underline">Python</a>, but with some unique quirks. For example, functions
                     do not return values, instead they can only modify variables passed into them
                     with the "var" prefix. This makes it easy to write functions that 
-                    essentially return multiple values.
+                    essentially return multiple values or none at all.
                     </p>
                     <p className="text-gray-600 text-lg mt-4 mb-8">
                     In addition, Shank has many built-in functions for common tasks, such as
@@ -116,22 +114,30 @@ function Shank() {
                         Conclusion & Lessons Learned
                     </h3>
                     <p className="text-gray-600 text-lg mt-4">
-                        Building CHERRY was a valuable learning experience that reinforced my understanding of full-stack development and cloud deployment. The most important skills I learned were how to use
-                        React.js, how to manually deploy a full-stack application on AWS, and how to implement security best practices in a web application (HTTPS, JWT, and Data Security).
+                        Finishing the development of Shank was my favorite 
+                    academic memory from college. I spent countless hours designing the language,
+                    implementing the lexer, parser, and interpreter, and testing it with various programs.
                     </p>
                     <p className="text-gray-600 text-lg mt-4 mb-8">
-                        I think I made a few mistakes in planning CHERRY,
-                        such as choosing to build the idea as a web app instead of a mobile app, and not utilizing
-                        Tailwind CSS for styling. However, I am proud of the final product and the skills I gained while building it.
+                        I think I missed a few opportunities to make the language more powerful,
+                        such as adding support for multiple program files, importing, and libraries, or adding file IO capabilities.
+                        However, I am very proud of what I accomplished and it
+                        helped build my current understanding of how programming languages work.
                     </p>
                     <p className="text-gray-600 text-lg mt-4 mb-8">
                         <span className='font-bold'>THANK YOU FOR READING!!!</span> If you have any questions or feedback, feel free to reach out to me via <a className="text-blue-500 underline" href="mailto:joshroundy9@gmail.com">email</a>.
                     </p>
                 </div>
                 <div className='h-64 w-sm md:h-80 md:w-lg md:mb-12'>
-                    <img src={sandDunes} alt="Database Diagram" className="w-full h-auto max-w-lg" />
+                    <img src={sandDunes} alt="Sand Dunes" className="w-full h-auto max-w-lg" />
                 </div>
             </div>
+            <Link
+                to="/projects"
+                className={`mt-8 self-center md:self-auto lg:mt-0 mb-8 py-2 rounded-md text-xl font-medium transition-colors duration-200 text-black hover:text-blue-400`}
+              >
+                Go Back to Projects
+              </Link>
         </div>
       </div>
     </div>

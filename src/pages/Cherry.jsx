@@ -7,6 +7,7 @@ import cherryDBDiagram from '../assets/cherrydbdiagram.JPEG';
 import cherryAWSDiagram from '../assets/cherryawsdiagram.png';
 import delicateArch from '../assets/delicatearch.JPEG';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Cherry() {
   const [showAWSDiagram, setShowAWSDiagram] = useState(false);
@@ -86,7 +87,7 @@ function Cherry() {
                     </div>
                     
                     <p className="text-gray-600 text-lg mt-4">
-                    CHERRY is my first solo full-stack project,
+                    CHERRY is my first solo full-stack web app,
                     so I wanted to choose a tech stack with a good balance of familiarity and new challenges. Utilizing the OpenAI API was a no brainer because it allowed me to leverage advanced AI capabilities without having to build them from scratch. I chose <a href='https://spring.io/projects/spring-boot' target="_blank" className="underline">Spring Boot</a> for the backend because I already had
                     professional experience with it and since my planned back end was relatively simple, I could put all my business logic in one Spring application vs using microservices (ex: AWS Lambda). I chose <a href='https://react.dev/' target="_blank" className="underline">React.js</a> for the frontend because it is very popular, and I wanted to learn it.
                     </p>
@@ -144,7 +145,7 @@ function Cherry() {
                   </div>
                 )}
             </div>
-            <div className='flex flex-col md:flex-row justify-between items-center w-full gap-5 mb-8 md:mb-12'>
+            <div className='flex flex-col md:flex-row justify-between items-center w-full gap-5 mb-2 md:mb-4'>
                 <div className='md:max-w-2xl w-full flex flex-col'>
                     <h3 className=" text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
                         Conclusion & Lessons Learned
@@ -163,9 +164,15 @@ function Cherry() {
                     </p>
                 </div>
                 <div className='h-64 w-sm md:h-80 md:w-lg md:mb-12'>
-                    <img src={delicateArch} alt="Database Diagram" className="w-full h-auto max-w-lg" />
+                    <img src={delicateArch} alt="Delicate Arch" className="w-full h-auto max-w-lg" />
                 </div>
             </div>
+            <Link
+                to="/projects"
+                className={`mt-8 self-center md:self-auto lg:mt-0 mb-8 py-2 rounded-md text-xl font-medium transition-colors duration-200 text-black hover:text-blue-400`}
+              >
+                Go Back to Projects
+              </Link>
         </div>
       </div>
     </div>

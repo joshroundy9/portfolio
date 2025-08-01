@@ -11,7 +11,7 @@ function AboutMe() {
     <div className="p-8">
         <div className="flex items-center lg:flex-row md:flex-row sm:flex-col flex-col justify-center">
             <img src={profilePhoto} alt="Profile" className=" h-auto w-2/3 mr-6 lg:w-sm md:w-sm sm:w-1/2 sm:pb-2" />
-            <div className="flex flex-col mb-6 justify-start text-start items-start lg:max-w-3xl">
+            <div className="flex flex-col mb-6 justify-start text-start items-start lg:max-w-4xl">
                 <h1 className=" text-3xl md:text-5xl font-bold text-gray-900 mb-4">Hello, I'm Josh.</h1>
                 <p className="text-gray-600 text-lg leading-relaxed">
                     Hello! 👋 I am a Software Engineer III at <a href='https://www.usaa.com/' target="_blank" className="underline">USAA</a> with a B.S. in Computer Science from the University at Albany.</p>
