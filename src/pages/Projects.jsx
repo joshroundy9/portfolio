@@ -16,7 +16,7 @@ function Projects() {
       <ul className="list-none list-inside flex flex-col flex-wrap justify-center text-2xl sm:flex-row sm:space-x-8 space-y-2 sm:space-y-0 min-w-80">
         <li className="mt-1 flex flex-col rounded-lg shadow-2xl px-4 py-2 bg-gradient-to-b from-gray-200 to-gray-300 max-w-96 transition-transform duration-300 hover:scale-105">
           <Link to="/projects/cherry" className="w-full h-full">
-            <div className='p-1 sm:p-2 flex items-center justify-center'>
+            <div className='p-1 flex items-center justify-center'>
               <img src={cherryExample} alt="Project Thumbnail" className="w-90 h-full object-cover" />
             </div>
             <div className="flex flex-row text-6xl font-bold text-red-600 font-jomhuria">
@@ -24,7 +24,7 @@ function Projects() {
                 <img src={cherryIcon} alt="Link" className="w-10 h-10" />
             </div>
             <p className="text-gray-600 text-lg">A full-stack AI-powered meal tracking web app with analytics.</p>
-            <div className='flex flex-row items-center justify-center gap-4 pt-4'>
+            <div className='flex flex-row items-center justify-center gap-2 md:gap-4 pt-4'>
               <span className="text-blue-500 text-sm underline underline-offset-3">REST API</span>
               <span className="text-blue-500 text-sm underline underline-offset-3">React.js</span>
               <span className="text-blue-500 text-sm underline underline-offset-3">Spring Boot</span>
@@ -46,7 +46,7 @@ function Projects() {
         </li>
         <li className="mt-1 flex flex-col rounded-lg shadow-2xl px-4 py-2 bg-gradient-to-b from-gray-200 to-gray-300 max-w-96 transition-transform duration-300 hover:scale-105">
           <Link to="/projects/shank" className="w-full h-full">
-            <div className='p-1 sm:p-2 flex items-center justify-center'>
+            <div className='p-1 flex items-center justify-center'>
               <img src={interpreterExample} alt="Project Thumbnail" className="w-90 h-full object-cover" />
             </div>
             <div className="flex flex-row text-5xl mt-1 mb-2 font-bold text-green-500 font-shadows-into-light">
@@ -68,7 +68,7 @@ function Projects() {
         </li>
         <li className="mt-1 flex flex-col rounded-lg shadow-2xl px-4 py-2 bg-gradient-to-b from-gray-200 to-gray-300 max-w-96 transition-transform duration-300 hover:scale-105">
           <Link to="/projects/portfolio" className="w-full h-full">
-            <div className='p-1 sm:p-2 flex items-center justify-center'>
+            <div className='p-1 flex items-center justify-center'>
               <img src={portfolioExample} alt="Project Thumbnail" className="w-90 h-full object-cover" />
             </div>
             <div className="font-bold mt-3 mb-4">Portfolio Website</div>

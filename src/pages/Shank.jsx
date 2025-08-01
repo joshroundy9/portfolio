@@ -2,7 +2,7 @@ import youtubeIcon from '../assets/youtubeicon.png';
 import githubIcon from '../assets/githubicon.png';
 import shankIcon from '../assets/shanklogo.png';
 
-import cherryDBDiagram from '../assets/cherrydbdiagram.JPEG';
+import shankDiagram from '../assets/shankdiagram.png';
 import sandDunes from '../assets/sanddunes.png';
 import { useState } from 'react';
 import { Link } from 'react-router-dom'
@@ -18,7 +18,7 @@ function Shank() {
                 <img src={shankIcon} alt="Link" className="w-12 h-12" />
             </div>
             <div className='flex flex-row items-center justify-center gap-6 '>
-                <a href="https://www.youtube.com/watch?v=fkjwlnVtwew" target="_blank" rel="noopener noreferrer" className="text-blue-500 mr-1 text-sm underline underline-offset-3">
+                <a href="https://www.youtube.com/watch?v=7sjDOcP40ZM" target="_blank" rel="noopener noreferrer" className="text-blue-500 mr-1 text-sm underline underline-offset-3">
                 <img src={youtubeIcon} alt="Link" className="w-10 h-10 transition-transform duration-300 hover:scale-110" />
                 </a>
                 <a href="https://github.com/joshroundy9/Interpreter" target="_blank" rel="noopener noreferrer" className="text-blue-500 mr-1 text-sm underline underline-offset-3">
@@ -69,7 +69,7 @@ function Shank() {
                     </p>
                 </div>
                 <div className='h-52 w-sm md:h-80 md:w-lg'>
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fkjwlnVtwew?si=v8r8lgG2LPIVLh5U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/7sjDOcP40ZM?si=qpRSu--W9UspNurs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
             <div className='flex flex-col md:flex-row justify-between items-center w-full gap-5 mb-8'>
@@ -98,12 +98,12 @@ function Shank() {
                 </div>
                 <div className='h-64 w-sm md:h-96 md:w-lg'>
                     <button onClick={() => setShowDBDiagram(true)} className="focus:outline-none">
-                        <img src={cherryDBDiagram} alt="Database Diagram" className="w-full h-auto max-w-lg cursor-zoom-in" />
+                        <img src={shankDiagram} alt="Database Diagram" className="w-full h-auto max-w-lg cursor-zoom-in" />
                     </button>
                 </div>
                 {showDBDiagram && (
                   <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80" onClick={() => setShowDBDiagram(false)}>
-                    <img src={cherryDBDiagram} alt="Database Diagram Expanded" className="max-h-[90vh] max-w-[90vw] rounded shadow-lg cursor-zoom-out" />
+                    <img src={shankDiagram} alt="Database Diagram Expanded" className="max-h-[90vh] max-w-[90vw] rounded shadow-lg cursor-zoom-out" />
                     <button onClick={() => setShowDBDiagram(false)} className="absolute top-4 right-4 text-white text-3xl font-bold">&times;</button>
                   </div>
                 )}

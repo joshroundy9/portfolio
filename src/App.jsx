@@ -5,6 +5,7 @@ import Projects from './pages/Projects.jsx'
 import AboutMe from './pages/AboutMe.jsx'
 import Cherry from './pages/Cherry.jsx'
 import Shank from './pages/Shank.jsx'
+import Portfolio from './pages/Portfolio.jsx'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 
@@ -90,6 +91,17 @@ function AppContent() {
                   transition={{ duration: 0.5 }}
                 >
                   <Shank />
+                </motion.div>
+              } />
+              <Route path="/projects/portfolio" element={
+                <motion.div
+                  key="portfolio"
+                  initial={{ opacity: 0, x: 30 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -30 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <Portfolio />
                 </motion.div>
               } />
             </Routes>
