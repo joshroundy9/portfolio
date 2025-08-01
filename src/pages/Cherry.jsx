@@ -67,10 +67,7 @@ function Cherry() {
                     food descriptions.
                     </p>
                     <p className="text-gray-600 text-lg mt-4 mb-8">
-                    In addition, CHERRY provides users with a weekly,
-                    monthly, and yearly graphs of their nutritional 
-                    and weight data and allows them to manually add 
-                    food items and easily re-add them to future meals.
+                    In addition, CHERRY provides users with weekly, monthly, and yearly graphs of their nutritional and weight data, and it allows them to manually add food items and easily re-add them to future meals.
                     </p>
                 </div>
                 <div className='h-52 w-sm md:h-80 md:w-lg'>
