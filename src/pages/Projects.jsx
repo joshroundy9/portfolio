@@ -77,6 +77,7 @@ function Projects() {
               <span className="text-blue-500 text-sm underline underline-offset-3">React.js</span>
               <span className="text-blue-500 text-sm underline underline-offset-3">Vite.js</span>
               <span className="text-blue-500 text-sm underline underline-offset-3">Tailwind CSS</span>
+              <span className="text-blue-500 text-sm underline underline-offset-3">AWS</span>
             </div>
             <div className='flex flex-row items-center justify-center gap-8 mt-8'>
               <a href="https://www.joshroundy.dev" target="_blank" rel="noopener noreferrer" className="text-blue-500 mr-1 text-sm underline underline-offset-3">

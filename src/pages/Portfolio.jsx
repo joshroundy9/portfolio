@@ -27,6 +27,7 @@ function Portfolio() {
               <span className="text-blue-500 text-sm underline underline-offset-3">React.js</span>
               <span className="text-blue-500 text-sm underline underline-offset-3">Vite.js</span>
               <span className="text-blue-500 text-sm underline underline-offset-3">Tailwind CSS</span>
+              <span className="text-blue-500 text-sm underline underline-offset-3">AWS</span>
         </div>
         <div className="w-full flex flex-col items-start justify-start max-w-7xl text-start">
             <div className='flex-1'>
@@ -63,12 +64,12 @@ function Portfolio() {
                     with personality while still including generous detail 
                     about my projects, experience, and skills.
                     </p>
-                    <p className="text-gray-600 text-lg mt-4 mb-8">
+                    <p className="text-gray-600 text-lg mt-4 md:mb-8">
                     After creating the site, I deployed it on AWS using <a href="https://aws.amazon.com/s3/" target="_blank" className="underline">S3</a> for hosting and <a href="https://aws.amazon.com/cloudfront/" target="_blank" className="underline">CloudFront</a> for CDN.
                     This setup allows for fast, reliable access to the site globally.
                     </p>
                 </div>
-                <div className='h-64 w-sm md:h-96 md:w-lg'>
+                <div className='h-64 w-sm md:h-96 md:w-lg mb-8 md:mb-0'>
                     <button onClick={() => setShowDBDiagram(true)} className="focus:outline-none">
                         <img src={shankDiagram} alt="Database Diagram" className="w-full h-auto max-w-lg cursor-zoom-in" />
                     </button>
@@ -106,7 +107,7 @@ function Portfolio() {
             </div>
             <Link
                 to="/projects"
-                className={`mt-12 self-center md:self-auto lg:mt-0 mb-8 py-2 rounded-md text-xl font-medium transition-colors duration-200 text-black hover:text-blue-400`}
+                className={`mt-16 self-center md:self-auto lg:mt-0 mb-8 py-2 rounded-md text-xl font-medium transition-colors duration-200 text-black hover:text-blue-400`}
               >
                 Go Back to Projects
               </Link>
