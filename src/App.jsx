@@ -1,3 +1,12 @@
+import { useEffect } from 'react';
+// ScrollToTop component to reset scroll position on route change
+function ScrollToTop() {
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+  return null;
+}
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion';
 import './App.css'
@@ -12,6 +21,7 @@ import { useLocation } from 'react-router-dom';
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <AppContent />
     </Router>
   );
