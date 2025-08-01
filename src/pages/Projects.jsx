@@ -47,7 +47,6 @@ function Projects() {
             <p className="text-gray-600 text-lg">Interpreter for my custom programming language "Shank".</p>
             <div className='flex flex-row items-center justify-center gap-4 pt-4'>
               <span className="text-blue-500 text-sm underline underline-offset-3">Java</span>
-              <span className="text-blue-500 text-sm underline underline-offset-3">Git</span>
               <span className="text-blue-500 text-sm underline underline-offset-3">Custom Programming Language</span>
             </div>
             <div className='flex flex-row items-center justify-center gap-8 mt-8'>

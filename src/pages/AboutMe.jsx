@@ -3,6 +3,7 @@ import profilePhoto from '../assets/profile.JPG';
 import githubIcon from '../assets/githubicon.png';
 import linkedinIcon from '../assets/linkedinicon.png';
 import emailIcon from '../assets/emailicon.png';
+import { Link } from 'react-router-dom';
 
 function AboutMe() {
   return (
@@ -18,6 +19,9 @@ function AboutMe() {
 I have over 10 years of development experience which began when I started developing Minecraft server plugins with the <a href='https://dev.bukkit.org/' target="_blank" className="underline">Bukkit API</a> at age 11. Since then, I've gained diverse professional experience — from USAA and the <a href='https://www.ny.gov/' target="_blank" className="underline">New York State Government</a> to making contributions at a local startup. </p>
                 <p className="text-gray-600 text-lg leading-relaxed mt-2">
 Outside of software development you can find me at the gym, on the beach, exploring hiking trails, or hitting the slopes ⛷️.
+                </p>
+                <p className="text-gray-600 text-lg leading-relaxed mt-2">
+                    Feel free to <Link to="/projects" className={`underline`}>browse my projects</Link>, connect with me on LinkedIn, or check out my <a href="/src/assets/Resume.pdf" target="_blank" rel="noopener noreferrer" className="underline">Resume</a>!
                 </p>
                 <div className="w-full flex flex-row items-center sm:justify-start justify-center pt-2 space-x-4 mt-2">
                     <a href="https://github.com/joshroundy9" target="_blank" rel="noopener noreferrer" className="github-link hover:scale-110 transition-transform duration-200">
