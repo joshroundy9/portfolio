@@ -126,6 +126,7 @@ function Cherry() {
                             <li>JWT authentication for secure user sessions</li>
                             <li>Environment variables for passwords and API keys</li>
                             <li>Users can only access their own data with a JWT-UserID header match</li>
+                            <li>ReCAPTCHA verification for bot protection</li>
                         </ul>
 
                     </p>

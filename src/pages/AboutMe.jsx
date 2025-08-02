@@ -27,7 +27,7 @@ Outside of software development you can find me at the gym, on the beach, explor
                     <a href="https://github.com/joshroundy9" target="_blank" rel="noopener noreferrer" className="github-link hover:scale-110 transition-transform duration-200">
                         <img src={githubIcon} alt="GitHub" className="w-10 h-10" />
                     </a>
-                    <a href="https://www.linkedin.com/in/joshroundy9/" target="_blank" rel="noopener noreferrer" className="linkedin-link hover:scale-110 transition-transform duration-200">
+                    <a href="https://www.linkedin.com/in/joshroundy/" target="_blank" rel="noopener noreferrer" className="linkedin-link hover:scale-110 transition-transform duration-200">
                         <img src={linkedinIcon} alt="LinkedIn" className="w-9 h-9 mr-1" />
                     </a>
                     <a href="mailto:joshroundy9@gmail.com" target="_blank" rel="noopener noreferrer" className="email-link hover:scale-110 transition-transform duration-200">
