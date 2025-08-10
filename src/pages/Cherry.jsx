@@ -111,7 +111,7 @@ function Cherry() {
                     </h3>
                     
                     <p className="text-gray-600 text-lg mt-4">
-                    At USAA, I am working on completing my <a href='https://aws.amazon.com/certification/certified-developer-associate/' target="_blank" className="underline">AWS Certified
+                    I am working on completing my <a href='https://aws.amazon.com/certification/certified-developer-associate/' target="_blank" className="underline">AWS Certified
                     Developer Associate Certification</a>, so I wanted to
                     deploy CHERRY on AWS to learn hands-on some of the services I do not normally use at work. I used S3 and CloudFront to host the static React frontend, an
                     EC2 instance to host the Spring Boot backend,
