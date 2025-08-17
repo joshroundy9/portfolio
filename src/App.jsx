@@ -17,6 +17,7 @@ import Shank from './pages/Shank.jsx'
 import Portfolio from './pages/Portfolio.jsx'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
+import CherryMobile from './pages/CherryMobile.jsx';
 
 function App() {
   return (
@@ -79,6 +80,17 @@ function AppContent() {
                   transition={{ duration: 0.5 }}
                 >
                   <Projects />
+                </motion.div>
+              } />
+              <Route path="/projects/cherrymobile" element={
+                <motion.div
+                  key="cherry"
+                  initial={{ opacity: 0, x: 30 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -30 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <CherryMobile />
                 </motion.div>
               } />
               <Route path="/projects/cherry" element={
