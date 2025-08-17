@@ -18,13 +18,13 @@ function Projects() {
       <ul className="list-none list-inside flex flex-col flex-wrap justify-center text-2xl sm:flex-row gap-2 sm:gap-8 min-w-80">
         <li className="flex flex-col rounded-lg shadow-2xl px-4 py-2 bg-gradient-to-b from-gray-200 to-gray-300 max-w-96 transition-transform duration-300 hover:scale-105">
           <Link to="/projects/cherrymobile" className="w-full h-full">
-            <div className='p-1 flex items-center justify-center'>
+            <div className='p-1 flex items-center justify-center mb-2.5'>
               <img src={cherryMobileExample} alt="Project Thumbnail" className="w-90 h-full object-cover" />
             </div>
             <div className="flex flex-row text-6xl font-bold text-red-600 font-jomhuria mb-3">
                 <img src={cherryMobileIcon} alt="Link" className="h-12" />
             </div>
-            <p className="text-gray-600 text-lg">A mobile version of the AI-powered meal tracking app with analytics.</p>
+            <p className="text-gray-600 text-lg">A mobile app for CHERRY with an improved UI and additional features.</p>
             <div className='flex flex-row items-center justify-center gap-2 md:gap-4 pt-4'>
               <span className="text-blue-500 text-sm underline underline-offset-3">REST API</span>
               <span className="text-blue-500 text-sm underline underline-offset-3">React Native</span>

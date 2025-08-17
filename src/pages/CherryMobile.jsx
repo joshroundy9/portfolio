@@ -3,6 +3,7 @@ import youtubeIcon from '../assets/youtubeicon.png';
 import githubIcon from '../assets/githubicon.png';
 import cherryMobileIcon from '../assets/cherrymobileicon.png';
 
+import cherryMobileExample from '../assets/cherrymobileexample.png';
 import cherryDBDiagram from '../assets/cherrydbdiagram.JPEG';
 import cherryAWSDiagram from '../assets/cherryawsdiagram.png';
 import delicateArch from '../assets/delicatearch.JPEG';
@@ -10,12 +11,13 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function CherryMobile() {
+  const [showVisualExample, setShowVisualExample] = useState(false);
   const [showAWSDiagram, setShowAWSDiagram] = useState(false);
   const [showDBDiagram, setShowDBDiagram] = useState(false);
   return (
     <div className="p-4 sm:p-8 mt-4 w-full flex items-start justify-center h-screen">
       <div className="w-full flex flex-col items-center justify-center">
-        <div className="flex flex-row items-center justify-center gap-4">
+        <div className="flex flex-row items-center justify-center gap-4 mb-2">
             <img src={cherryMobileIcon} alt="Project Thumbnail" className="w-32 h-full object-cover pb-1" />
             <div className='flex flex-row items-center justify-center gap-6 '>
                 <a href="https://www.youtube.com/watch?v=fkjwlnVtwew" target="_blank" rel="noopener noreferrer" className="text-blue-500 mr-1 text-sm underline underline-offset-3">
@@ -40,13 +42,15 @@ function CherryMobile() {
                     <p className="text-gray-600 text-lg mt-4 mb-8">
                     After building CHERRY, I had a choice to make for my next project.
                     I could either expand CHERRY in some way, or I could build something new.
-                    I decided to build a mobile version of CHERRY because after talking
-                    with my friends and family about the web app, I realized it would be much 
-                    better as a mobile app and because I wanted to add the ability
-                    to track calories by just taking pictures of food.
+                    After some consideration I decided to build a mobile version of CHERRY because I felt it would
+                    show my growth as a developer and prove my ability to build complex
+                    full-stack projects.
                     </p>
                     <p className="text-gray-600 text-lg mt-4 mb-8">
-                        With AI growing so fast and becoming more accessible, I wanted to leverage it to make meal tracking easier and fix the problems I had with existing apps.
+                        As detailed in my <Link to="/projects/cherry" className={`underline`}>
+                        CHERRY web app project article</Link>, the most common feedback I received was that it should be a mobile app. 
+                        I also recognized opportunities to improve the original UI design. I hope this project can demonstrate my ability to 
+                        incorporate constructive criticism, adapt to new technologies, and iteratively improve my work.
                     </p>
                 </div>
             <div className='flex flex-col md:flex-row justify-between items-center w-full gap-5 mb-8 md:mb-12'>
@@ -55,12 +59,18 @@ function CherryMobile() {
                         Project Overview
                     </h3>
                     <p className="text-gray-600 text-lg mt-4 mb-8">
-                    <a href='https://cherry.joshroundy.dev/' target="_blank" className="underline">CHERRY</a> is a modern, AI-powered meal-tracking web app that utilizes the <a href='https://openai.com/api/' target="_blank" className="underline">OpenAI API</a> to retrieve
-                    nutritional information from plain english
-                    food descriptions.
+                    CHERRY Mobile uses the lessons learned from <a 
+                    href='https://cherry.joshroundy.dev/' target="_blank" className="underline">CHERRY</a> to
+                    provide a greatly improved user experience with several additional features.
+                    The main addition is the ability to get nutritional information from 
+                    pictures of your meals using the <a href='https://platform.openai.com/docs/api-reference/images' target="_blank" className="underline">OpenAI Image API</a>.
+
                     </p>
                     <p className="text-gray-600 text-lg mt-4 mb-8">
-                    In addition, CHERRY provides users with weekly, monthly, and yearly graphs of their nutritional and weight data, and it allows them to manually add food items and easily re-add them to future meals.
+                    In addition, CHERRY Mobile provides users with with 
+                    much more detailed analytics and graphs which not only make 
+                    the tracking process more engaging, but also help users better 
+                    understand their nutritional habits and progress over time.
                     </p>
                 </div>
                 <div className='h-52 w-sm md:h-80 md:w-lg'>
@@ -71,9 +81,38 @@ function CherryMobile() {
                 <div className='md:max-w-2xl flex-1'>
                     <div className='flex flex-row items-center justify-start'>
                         <h3 className=" text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
-                        Design
+                        Visual Design
                         </h3>
-                        <a href='https://www.figma.com/design/9na15WcguKcXO18PswOSYC/Untitled?node-id=0-1&t=hIQux2yCth4p221D-1' target="_blank" className="flex flex-row text-blue-500 text-lg underline underline-offset-3 pb-1 ml-8">Figma Board</a>
+                        <a href='https://www.figma.com/design/NGpP6fxiM1XJ2M6X4ij1My/Cherry-Mobile-Design-Board?node-id=0-1&t=rkpfFZGsW4ZGCrxE-1' target="_blank" className="flex flex-row text-blue-500 text-lg underline underline-offset-3 pb-1 ml-8">Figma Board</a>
+                    </div>
+                    
+                    <p className="text-gray-600 text-lg mt-4">
+                    CHERRY is my first solo full-stack web app,
+                    so I wanted to choose a tech stack with a good balance of familiarity and new challenges. Utilizing the OpenAI API was a no brainer because it allowed me to leverage advanced AI capabilities without having to build them from scratch. I chose <a href='https://spring.io/projects/spring-boot' target="_blank" className="underline">Spring Boot</a> for the backend because I already had
+                    professional experience with it and since my planned back end was relatively simple, I could put all my business logic in one Spring application vs using microservices (ex: AWS Lambda). I chose <a href='https://react.dev/' target="_blank" className="underline">React.js</a> for the frontend because it is very popular, and I wanted to learn it.
+                    </p>
+                    <p className="text-gray-600 text-lg mt-4 mb-8">
+                    I designed a simple, modern UI with <a href='https://www.figma.com/design/' target="_blank" className="underline">Figma</a> that would be easy to use on both desktop and mobile devices.
+                    </p>
+                </div>
+                <div className='h-64 w-sm md:h-96 md:w-lg'>
+                    <button onClick={() => setShowVisualExample(true)} className="focus:outline-none">
+                        <img src={cherryMobileExample} alt="Cherry Mobile Example" className="w-full h-auto max-w-lg cursor-zoom-in" />
+                    </button>
+                </div>
+                {showVisualExample && (
+                  <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80" onClick={() => setShowVisualExample(false)}>
+                    <img src={cherryMobileExample} alt="Cherry Mobile Example Expanded" className="max-h-[90vh] max-w-[90vw] rounded shadow-lg cursor-zoom-out" />
+                    <button onClick={() => setShowDBDiagram(false)} className="absolute top-4 right-4 text-white text-3xl font-bold">&times;</button>
+                  </div>
+                )}
+            </div>
+            <div className='flex flex-col md:flex-row justify-between items-center w-full gap-5 mb-8'>
+                <div className='md:max-w-2xl flex-1'>
+                    <div className='flex flex-row items-center justify-start'>
+                        <h3 className=" text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
+                        Technical Design
+                        </h3>
                     </div>
                     
                     <p className="text-gray-600 text-lg mt-4">
