@@ -83,19 +83,25 @@ function CherryMobile() {
                         <h3 className=" text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
                         Visual Design
                         </h3>
-                        <a href='https://www.figma.com/design/NGpP6fxiM1XJ2M6X4ij1My/Cherry-Mobile-Design-Board?node-id=0-1&t=rkpfFZGsW4ZGCrxE-1' target="_blank" className="flex flex-row text-blue-500 text-lg underline underline-offset-3 pb-1 ml-8">Figma Board</a>
+                        <a href='https://www.figma.com/design/NGpP6fxiM1XJ2M6X4ij1My/Cherry-Mobile-Design-Board?node-id=0-1&t=rkpfFZGsW4ZGCrxE-1' target="_blank" className="flex flex-row text-blue-500 text-lg underline underline-offset-3 pb-0.5 ml-8">Figma Board</a>
                     </div>
                     
                     <p className="text-gray-600 text-lg mt-4">
-                    CHERRY is my first solo full-stack web app,
-                    so I wanted to choose a tech stack with a good balance of familiarity and new challenges. Utilizing the OpenAI API was a no brainer because it allowed me to leverage advanced AI capabilities without having to build them from scratch. I chose <a href='https://spring.io/projects/spring-boot' target="_blank" className="underline">Spring Boot</a> for the backend because I already had
-                    professional experience with it and since my planned back end was relatively simple, I could put all my business logic in one Spring application vs using microservices (ex: AWS Lambda). I chose <a href='https://react.dev/' target="_blank" className="underline">React.js</a> for the frontend because it is very popular, and I wanted to learn it.
+                    Despite being my first mobile app, I had already learned a lot about mobile design principles
+                    from creating the mobile styling for CHERRY Web and my portfolio website. 
+                    </p>
+                    <p className="text-gray-600 text-lg mt-4 mb-4">
+                    As I designed the UI with <a href='https://www.figma.com/design/' target="_blank" 
+                    className="underline">Figma</a> I took inspiration from popular mobile apps for 
+                    the best practices in mobile design, such as
+                    using bottom navigation bars, large touch targets, and clear visual hierarchy.
+                    I also focused on creating a consistent and intuitive user experience across the app.
                     </p>
                     <p className="text-gray-600 text-lg mt-4 mb-8">
-                    I designed a simple, modern UI with <a href='https://www.figma.com/design/' target="_blank" className="underline">Figma</a> that would be easy to use on both desktop and mobile devices.
+                    My end goal was to create a great looking app that made meal tracking quick, easy, and fun.
                     </p>
                 </div>
-                <div className='h-64 w-sm md:h-96 md:w-lg'>
+                <div className='h-64 w-sm md:h-96 md:w-lg md:pt-8'>
                     <button onClick={() => setShowVisualExample(true)} className="focus:outline-none">
                         <img src={cherryMobileExample} alt="Cherry Mobile Example" className="w-full h-auto max-w-lg cursor-zoom-in" />
                     </button>

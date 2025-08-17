@@ -82,7 +82,7 @@ function Cherry() {
                         <h3 className=" text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
                         Visual Design
                         </h3>
-                        <a href='https://www.figma.com/design/9na15WcguKcXO18PswOSYC/Untitled?node-id=0-1&t=hIQux2yCth4p221D-1' target="_blank" className="flex flex-row text-blue-500 text-lg underline underline-offset-3 pb-1 ml-8">Figma Board</a>
+                        <a href='https://www.figma.com/design/9na15WcguKcXO18PswOSYC/Untitled?node-id=0-1&t=hIQux2yCth4p221D-1' target="_blank" className="flex flex-row text-blue-500 text-lg underline underline-offset-3 pb-0.5 ml-8">Figma Board</a>
                     </div>
                     
                     <p className="text-gray-600 text-lg mt-4">
