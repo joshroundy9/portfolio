@@ -98,7 +98,7 @@ function Cherry() {
                     area, seamlessly switching between meal tracking, nutritional input, and graphs.
                     </p>
                 </div>
-                <div className='h-64 w-sm md:h-96 md:w-lg md:pt-8'>
+                <div className='h-64 w-sm md:h-96 md:w-lg md:pt-10'>
                     <button onClick={() => setShowVisualDesign(true)} className="focus:outline-none">
                         <img src={cherryExample} alt="Visual Design" className="w-full h-auto max-w-lg cursor-zoom-in" />
                     </button>
@@ -117,7 +117,6 @@ function Cherry() {
                         Technical Design
                         </h3>
                     </div>
-                    
                     <p className="text-gray-600 text-lg mt-4">
                     As my first solo full-stack project, I chose technologies that
                      leveraged familiarity while still providing learning opportunities. 
@@ -138,7 +137,7 @@ function Cherry() {
                     REST API that could handle all the core logic of the app.
                     </p>
                 </div>
-                <div className='h-64 w-sm md:h-96 md:w-lg'>
+                <div className='h-64 w-sm md:h-96 md:w-lg md:pt-4'>
                     <button onClick={() => setShowDBDiagram(true)} className="focus:outline-none">
                         <img src={cherryDBDiagram} alt="Database Diagram" className="w-full h-auto max-w-lg cursor-zoom-in" />
                     </button>

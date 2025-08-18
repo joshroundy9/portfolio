@@ -44,7 +44,7 @@ function CherryMobile() {
                     After building <a href="https://cherry.joshroundy.dev" className="underline">CHERRY</a>, I had a choice to make for my next project.
                     I could either expand a previous project in some way, or I could build something new.
                     After some consideration I decided to build a mobile version of CHERRY because I felt it would
-                    show my growth as a developer and prove my ability to build and finish complex
+                    show my growth as a developer and prove my ability to develop and finish complex
                     full-stack projects end-to-end.
                     </p>
                     <p className="text-gray-600 text-lg mt-4 mb-8">
@@ -105,7 +105,7 @@ function CherryMobile() {
                     My end goal was to create a great looking app that made meal tracking quick, easy, and fun.
                     </p>
                 </div>
-                <div className='h-64 w-sm md:h-96 md:w-lg'>
+                <div className='h-64 w-sm md:h-96 md:w-lg md:pt-10'>
                     <button onClick={() => setShowVisualExample(true)} className="focus:outline-none">
                         <img src={cherryMobileExample} alt="Cherry Mobile Example" className="w-full h-auto max-w-lg cursor-zoom-in" />
                     </button>
@@ -126,7 +126,7 @@ function CherryMobile() {
                     </div>
                     
                     <p className="text-gray-600 text-lg mt-4">
-                    CHERRY Mobile is built using the same backend technologies as the web app.
+                    CHERRY Mobile is connected to the same backend as the web app.
                     This allows for seamless data sync and a consistent experience across all platforms.
                     However, the the backend did need some modifications to support 
                     some of the new features which include new endpoints for image 
@@ -141,7 +141,7 @@ function CherryMobile() {
                     building my portfolio website for app development.
                     </p>
                 </div>
-                <div className='h-64 w-sm md:h-96 md:w-lg'>
+                <div className='h-64 w-sm md:h-96 md:w-lg md:pt-4'>
                     <button onClick={() => setShowSpringDiagram(true)} className="focus:outline-none">
                         <img src={cherryDBDiagram} alt="Database Diagram" className="w-full h-auto max-w-lg cursor-zoom-in" />
                     </button>
@@ -166,7 +166,7 @@ function CherryMobile() {
                         and finally to the Google Play Store.
                     </p>
                     <p className="text-gray-600 text-lg mt-4 mb-8">
-                        Out of all the projects I've built, I am most proud of CHERRY Mobile.
+                        Out of all the projects I've built, CHERRY Mobile is my favorite.
                         It is a project that I can confidently say I'm proud of and has the potential to help
                         many people track their meals and improve their nutrition.
                         I hope to continue improving it in the future by adding more features and expanding its reach.
