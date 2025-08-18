@@ -1,25 +1,26 @@
-import liveIcon from '../assets/liveicon.png';
+import googlePlayIcon from '../assets/googleplayicon.png';
 import youtubeIcon from '../assets/youtubeicon.png';
 import githubIcon from '../assets/githubicon.png';
 import cherryMobileIcon from '../assets/cherrymobileicon.png';
 
 import cherryMobileExample from '../assets/cherrymobileexample.png';
-import cherryDBDiagram from '../assets/cherrydbdiagram.JPEG';
-import cherryAWSDiagram from '../assets/cherryawsdiagram.png';
-import delicateArch from '../assets/delicatearch.JPEG';
+import cherryDBDiagram from '../assets/cherrymobiletechnicaldesign.png';
+import sedona from '../assets/sedona.png';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function CherryMobile() {
   const [showVisualExample, setShowVisualExample] = useState(false);
-  const [showAWSDiagram, setShowAWSDiagram] = useState(false);
-  const [showDBDiagram, setShowDBDiagram] = useState(false);
+  const [showSpringDiagram, setShowSpringDiagram] = useState(false);
   return (
     <div className="p-4 sm:p-8 mt-4 w-full flex items-start justify-center h-screen">
       <div className="w-full flex flex-col items-center justify-center">
         <div className="flex flex-row items-center justify-center gap-4 mb-2">
             <img src={cherryMobileIcon} alt="Project Thumbnail" className="w-32 h-full object-cover pb-1" />
-            <div className='flex flex-row items-center justify-center gap-6 '>
+            <div className='flex flex-row items-center justify-center gap-4 '>
+                <a href="https://play.google.com/" target="_blank" rel="noopener noreferrer" className="text-blue-500 mr-1 text-sm underline underline-offset-3">
+                <img src={googlePlayIcon} alt="Link" className="w-10 h-10 transition-transform duration-300 hover:scale-110" />
+                </a>
                 <a href="https://www.youtube.com/watch?v=fkjwlnVtwew" target="_blank" rel="noopener noreferrer" className="text-blue-500 mr-1 text-sm underline underline-offset-3">
                 <img src={youtubeIcon} alt="Link" className="w-10 h-10 transition-transform duration-300 hover:scale-110" />
                 </a>
@@ -40,15 +41,15 @@ function CherryMobile() {
                         Introduction
                     </h3>
                     <p className="text-gray-600 text-lg mt-4 mb-8">
-                    After building CHERRY, I had a choice to make for my next project.
-                    I could either expand CHERRY in some way, or I could build something new.
+                    After building <a href="https://cherry.joshroundy.dev" className="underline">CHERRY</a>, I had a choice to make for my next project.
+                    I could either expand a previous project in some way, or I could build something new.
                     After some consideration I decided to build a mobile version of CHERRY because I felt it would
-                    show my growth as a developer and prove my ability to build complex
-                    full-stack projects.
+                    show my growth as a developer and prove my ability to build and finish complex
+                    full-stack projects end-to-end.
                     </p>
                     <p className="text-gray-600 text-lg mt-4 mb-8">
                         As detailed in my <Link to="/projects/cherry" className={`underline`}>
-                        CHERRY web app project article</Link>, the most common feedback I received was that it should be a mobile app. 
+                        CHERRY web app project article</Link>, the most common feedback I received was that CHERRY should've been a mobile app. 
                         I also recognized opportunities to improve the original UI design. I hope this project can demonstrate my ability to 
                         incorporate constructive criticism, adapt to new technologies, and iteratively improve my work.
                     </p>
@@ -59,18 +60,20 @@ function CherryMobile() {
                         Project Overview
                     </h3>
                     <p className="text-gray-600 text-lg mt-4 mb-8">
-                    CHERRY Mobile uses the lessons learned from <a 
-                    href='https://cherry.joshroundy.dev/' target="_blank" className="underline">CHERRY</a> to
+                    CHERRY Mobile uses the lessons learned from CHERRY Web to
                     provide a greatly improved user experience with several additional features.
                     The main addition is the ability to get nutritional information from 
                     pictures of your meals using the <a href='https://platform.openai.com/docs/api-reference/images' target="_blank" className="underline">OpenAI Image API</a>.
 
                     </p>
                     <p className="text-gray-600 text-lg mt-4 mb-8">
-                    In addition, CHERRY Mobile provides users with with 
-                    much more detailed analytics and graphs which not only make 
+                    In addition, CHERRY Mobile provides users with 
+                    much more detailed analytics and graphs. These features not only make 
                     the tracking process more engaging, but also help users better 
                     understand their nutritional habits and progress over time.
+                    Additional features include a new home screen with prompts,
+                    a heatmap of tracking activity, and a profile page that 
+                    displays basic user information.
                     </p>
                 </div>
                 <div className='h-52 w-sm md:h-80 md:w-lg'>
@@ -95,13 +98,14 @@ function CherryMobile() {
                     className="underline">Figma</a> I took inspiration from popular mobile apps for 
                     the best practices in mobile design, such as
                     using bottom navigation bars, large touch targets, and clear visual hierarchy.
-                    I also focused on creating a consistent and intuitive user experience across the app.
+                    I also focused on creating a consistent and enjoyable user experience across the app
+                    by adding helpful tooltips, shortcut buttons, and intuitive icons.
                     </p>
                     <p className="text-gray-600 text-lg mt-4 mb-8">
                     My end goal was to create a great looking app that made meal tracking quick, easy, and fun.
                     </p>
                 </div>
-                <div className='h-64 w-sm md:h-96 md:w-lg md:pt-8'>
+                <div className='h-64 w-sm md:h-96 md:w-lg'>
                     <button onClick={() => setShowVisualExample(true)} className="focus:outline-none">
                         <img src={cherryMobileExample} alt="Cherry Mobile Example" className="w-full h-auto max-w-lg cursor-zoom-in" />
                     </button>
@@ -109,7 +113,7 @@ function CherryMobile() {
                 {showVisualExample && (
                   <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80" onClick={() => setShowVisualExample(false)}>
                     <img src={cherryMobileExample} alt="Cherry Mobile Example Expanded" className="max-h-[90vh] max-w-[90vw] rounded shadow-lg cursor-zoom-out" />
-                    <button onClick={() => setShowDBDiagram(false)} className="absolute top-4 right-4 text-white text-3xl font-bold">&times;</button>
+                    <button onClick={() => setShowSpringDiagram(false)} className="absolute top-4 right-4 text-white text-3xl font-bold">&times;</button>
                   </div>
                 )}
             </div>
@@ -122,62 +126,30 @@ function CherryMobile() {
                     </div>
                     
                     <p className="text-gray-600 text-lg mt-4">
-                    CHERRY is my first solo full-stack web app,
-                    so I wanted to choose a tech stack with a good balance of familiarity and new challenges. Utilizing the OpenAI API was a no brainer because it allowed me to leverage advanced AI capabilities without having to build them from scratch. I chose <a href='https://spring.io/projects/spring-boot' target="_blank" className="underline">Spring Boot</a> for the backend because I already had
-                    professional experience with it and since my planned back end was relatively simple, I could put all my business logic in one Spring application vs using microservices (ex: AWS Lambda). I chose <a href='https://react.dev/' target="_blank" className="underline">React.js</a> for the frontend because it is very popular, and I wanted to learn it.
+                    CHERRY Mobile is built using the same backend technologies as the web app.
+                    This allows for seamless data sync and a consistent experience across all platforms.
+                    However, the the backend did need some modifications to support 
+                    some of the new features which include new endpoints for image 
+                    nutrition retrieval, heat map data, and average data. In addition,
+                    I had to add two new fields to the User table to store 
+                    the user's original weight and the date their account was created.
                     </p>
                     <p className="text-gray-600 text-lg mt-4 mb-8">
-                    I designed a simple, modern UI with <a href='https://www.figma.com/design/' target="_blank" className="underline">Figma</a> that would be easy to use on both desktop and mobile devices.
+                    Moving from frontend development with React.js to <a href='https://reactnative.dev/' target="_blank" className="underline">React Native</a> was pretty simple.
+                    Since I utilized <a href='https://www.nativewind.dev/' target="_blank" className="underline">
+                    Nativewind</a> for styling, I was able to apply the same Tailwind CSS styling knowledge I had gained from 
+                    building my portfolio website for app development.
                     </p>
                 </div>
                 <div className='h-64 w-sm md:h-96 md:w-lg'>
-                    <button onClick={() => setShowDBDiagram(true)} className="focus:outline-none">
+                    <button onClick={() => setShowSpringDiagram(true)} className="focus:outline-none">
                         <img src={cherryDBDiagram} alt="Database Diagram" className="w-full h-auto max-w-lg cursor-zoom-in" />
                     </button>
                 </div>
-                {showDBDiagram && (
-                  <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80" onClick={() => setShowDBDiagram(false)}>
+                {showSpringDiagram && (
+                  <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80" onClick={() => setShowSpringDiagram(false)}>
                     <img src={cherryDBDiagram} alt="Database Diagram Expanded" className="max-h-[90vh] max-w-[90vw] rounded shadow-lg cursor-zoom-out" />
-                    <button onClick={() => setShowDBDiagram(false)} className="absolute top-4 right-4 text-white text-3xl font-bold">&times;</button>
-                  </div>
-                )}
-            </div>
-            <div className='flex flex-col md:flex-row justify-between items-center w-full gap-5 mb-8 md:mb-12'>
-                <div className='md:max-w-2xl flex-1'>
-                    <h3 className=" text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
-                    Deployment & Security
-                    </h3>
-                    
-                    <p className="text-gray-600 text-lg mt-4">
-                    I am working on completing my <a href='https://aws.amazon.com/certification/certified-developer-associate/' target="_blank" className="underline">AWS Certified
-                    Developer Associate Certification</a>, so I wanted to
-                    deploy CHERRY on AWS to learn hands-on some of the services I do not normally use at work. I used S3 and CloudFront to host the static React frontend, an
-                    EC2 instance to host the Spring Boot backend,
-                    RDS to host the PostgreSQL database, and Route 53
-                    for DNS management.
-                    </p>
-                    <p className="text-gray-600 text-lg mt-4 mb-8">
-                        Any app that handles user information should prioritize security and compliance, especially when dealing with sensitive data. So I implemented
-                        several security measures in CHERRY, including:
-                        <ul className="list-disc list-inside mt-2 text-lg">
-                            <li>HTTPS with SSL/TLS for secure data transmission</li>
-                            <li>JWT authentication for secure user sessions</li>
-                            <li>Environment variables for passwords and API keys</li>
-                            <li>Users can only access their own data with a JWT-UserID header match</li>
-                            <li>ReCAPTCHA verification for bot protection</li>
-                        </ul>
-
-                    </p>
-                </div>
-                <div className='h-64 w-sm md:h-96 md:w-lg'>
-                    <button onClick={() => setShowAWSDiagram(true)} className="focus:outline-none">
-                        <img src={cherryAWSDiagram} alt="Database Diagram" className="w-full h-auto max-w-lg cursor-zoom-in" />
-                    </button>
-                </div>
-                {showAWSDiagram && (
-                  <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80" onClick={() => setShowAWSDiagram(false)}>
-                    <img src={cherryAWSDiagram} alt="AWS Diagram Expanded" className="max-h-[90vh] max-w-[90vw] rounded shadow-lg cursor-zoom-out" />
-                    <button onClick={() => setShowAWSDiagram(false)} className="absolute top-4 right-4 text-white text-3xl font-bold">&times;</button>
+                    <button onClick={() => setShowSpringDiagram(false)} className="absolute top-4 right-4 text-white text-3xl font-bold">&times;</button>
                   </div>
                 )}
             </div>
@@ -187,20 +159,24 @@ function CherryMobile() {
                         Conclusion & Lessons Learned
                     </h3>
                     <p className="text-gray-600 text-lg mt-4">
-                        Building CHERRY was a valuable learning experience that reinforced my understanding of full-stack development and cloud deployment. The most important skills I learned were how to use
-                        React.js, how to manually deploy a full-stack application on AWS, and how to implement security best practices in a web application (HTTPS, JWT, and Data Security).
+                        Building CHERRY Mobile was an incredibly valuable learning experience 
+                        which opened my eyes to the world of mobile app development.
+                        The most important skill I learned was how to create and deploy
+                        a mobile app end-to-end, from concept, planning, development, testing, 
+                        and finally to the Google Play Store.
                     </p>
                     <p className="text-gray-600 text-lg mt-4 mb-8">
-                        I think I made a few mistakes in planning CHERRY,
-                        such as choosing to build the idea as a web app instead of a mobile app, and not utilizing
-                        Tailwind CSS for styling. However, I am proud of the final product and the skills I gained while building it.
+                        Out of all the projects I've built, I am most proud of CHERRY Mobile.
+                        It is a project that I can confidently say I'm proud of and has the potential to help
+                        many people track their meals and improve their nutrition.
+                        I hope to continue improving it in the future by adding more features and expanding its reach.
                     </p>
                     <p className="text-gray-600 text-lg mt-4 mb-8">
                         <span className='font-bold'>THANK YOU FOR READING!!!</span> If you have any questions or feedback, feel free to reach out to me via <a className="text-blue-500 underline" href="mailto:joshroundy9@gmail.com">email</a>.
                     </p>
                 </div>
                 <div className='h-64 w-sm md:h-80 md:w-lg md:mb-12'>
-                    <img src={delicateArch} alt="Delicate Arch" className="w-full h-auto max-w-lg" />
+                    <img src={sedona} alt="Delicate Arch" className="w-full h-auto max-w-lg" />
                 </div>
             </div>
             <Link

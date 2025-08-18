@@ -1,3 +1,4 @@
+import googlePlayIcon from '../assets/googleplayicon.png';
 import cherryMobileExample from '../assets/cherrymobileexample.png';
 import cherryExample from '../assets/cherryexample.png';
 import interpreterExample from '../assets/interpreterexample.png';
@@ -32,11 +33,14 @@ function Projects() {
               <span className="text-blue-500 text-sm underline underline-offset-3">Spring Boot</span>
             </div>
             <div className='flex flex-row items-center justify-center gap-8 mt-8'>
-              <a href="https://www.youtube.com/watch?v=IligeviHT-M" target="_blank" rel="noopener noreferrer" className="text-blue-500 mr-1 text-sm underline underline-offset-3">
-                <img src={youtubeIcon} alt="Link" className="w-10 h-10" />
+              <a href="https://play.google.com/" target="_blank" rel="noopener noreferrer" className="text-blue-500 mr-1 text-sm underline underline-offset-3">
+              <img src={googlePlayIcon} alt="Link" className="w-10 h-10 transition-transform duration-300 hover:scale-110" />
               </a>
-              <a href="https://github.com/joshroundy9/Cherry" target="_blank" rel="noopener noreferrer" className="text-blue-500 mr-1 text-sm underline underline-offset-3">
-                <img src={githubIcon} alt="Link" className="w-10 h-10" />
+              <a href="https://www.youtube.com/watch?v=fkjwlnVtwew" target="_blank" rel="noopener noreferrer" className="text-blue-500 mr-1 text-sm underline underline-offset-3">
+              <img src={youtubeIcon} alt="Link" className="w-10 h-10 transition-transform duration-300 hover:scale-110" />
+              </a>
+              <a href="https://github.com/joshroundy9/CherryMobileApp" target="_blank" rel="noopener noreferrer" className="text-blue-500 mr-1 text-sm underline underline-offset-3">
+              <img src={githubIcon} alt="Link" className="w-10 h-10 transition-transform duration-300 hover:scale-110" />
               </a>
             </div>
           </Link>
