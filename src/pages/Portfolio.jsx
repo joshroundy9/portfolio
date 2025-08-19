@@ -18,7 +18,7 @@ function Portfolio() {
                 <a href="https://joshroundy.dev" target="_blank" rel="noopener noreferrer" className="text-blue-500 mr-1 text-sm underline underline-offset-3">
                 <img src={liveIcon} alt="Link" className="w-8 h-8 transition-transform duration-300 hover:scale-110" />
                 </a>
-                <a href="https://github.com/joshroundy9/Interpreter" target="_blank" rel="noopener noreferrer" className="text-blue-500 mr-1 text-sm underline underline-offset-3">
+                <a href="https://github.com/joshroundy9/portfolio" target="_blank" rel="noopener noreferrer" className="text-blue-500 mr-1 text-sm underline underline-offset-3">
                 <img src={githubIcon} alt="Link" className="w-10 h-10 transition-transform duration-300 hover:scale-110" />
                 </a>
             </div>

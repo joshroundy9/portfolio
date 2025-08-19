@@ -19,9 +19,9 @@ function CherryMobile() {
             <img src={cherryMobileIcon} alt="Project Thumbnail" className="w-32 h-full object-cover pb-1" />
             <div className='flex flex-row items-center justify-center gap-4 '>
                 <a href="https://play.google.com/" target="_blank" rel="noopener noreferrer" className="text-blue-500 mr-1 text-sm underline underline-offset-3">
-                <img src={googlePlayIcon} alt="Link" className="w-10 h-10 transition-transform duration-300 hover:scale-110" />
+                <img src={googlePlayIcon} alt="Link" className="//w-10 //h-10 h-0 w-0 transition-transform duration-300 hover:scale-110" hidden="true"/>
                 </a>
-                <a href="https://www.youtube.com/watch?v=fkjwlnVtwew" target="_blank" rel="noopener noreferrer" className="text-blue-500 mr-1 text-sm underline underline-offset-3">
+                <a href="https://www.youtube.com/watch?v=UaZFytZe6NA" target="_blank" rel="noopener noreferrer" className="text-blue-500 mr-1 text-sm underline underline-offset-3">
                 <img src={youtubeIcon} alt="Link" className="w-10 h-10 transition-transform duration-300 hover:scale-110" />
                 </a>
                 <a href="https://github.com/joshroundy9/CherryMobileApp" target="_blank" rel="noopener noreferrer" className="text-blue-500 mr-1 text-sm underline underline-offset-3">
@@ -49,7 +49,7 @@ function CherryMobile() {
                     </p>
                     <p className="text-gray-600 text-lg mt-4 mb-8">
                         As detailed in my <Link to="/projects/cherry" className={`underline`}>
-                        CHERRY web app project article</Link>, the most common feedback I received was that CHERRY should've been a mobile app. 
+                        CHERRY web app project article</Link> (which I would recommend reading first), the most common feedback I received was that CHERRY should've been a mobile app. 
                         I also recognized opportunities to improve the original UI design. I hope this project can demonstrate my ability to 
                         incorporate constructive criticism, adapt to new technologies, and iteratively improve my work.
                     </p>
@@ -77,7 +77,7 @@ function CherryMobile() {
                     </p>
                 </div>
                 <div className='h-52 w-sm md:h-80 md:w-lg'>
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fkjwlnVtwew?si=v8r8lgG2LPIVLh5U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/UaZFytZe6NA?si=SMc9N07zbRMdn6su" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
             <div className='flex flex-col md:flex-row justify-between items-center w-full gap-5 mb-8'>
@@ -135,10 +135,10 @@ function CherryMobile() {
                     the user's original weight and the date their account was created.
                     </p>
                     <p className="text-gray-600 text-lg mt-4 mb-8">
-                    Moving from frontend development with React.js to <a href='https://reactnative.dev/' target="_blank" className="underline">React Native</a> was pretty simple.
+                    Moving from frontend development with React.js to mobile development with <a href='https://reactnative.dev/' target="_blank" className="underline">React Native</a> was pretty simple.
                     Since I utilized <a href='https://www.nativewind.dev/' target="_blank" className="underline">
                     Nativewind</a> for styling, I was able to apply the same Tailwind CSS styling knowledge I had gained from 
-                    building my portfolio website for app development.
+                    building my portfolio website for mobile app development.
                     </p>
                 </div>
                 <div className='h-64 w-sm md:h-96 md:w-lg md:pt-4'>
@@ -163,12 +163,12 @@ function CherryMobile() {
                         which opened my eyes to the world of mobile app development.
                         The most important skill I learned was how to create and deploy
                         a mobile app end-to-end, from concept, planning, development, testing, 
-                        and finally to the Google Play Store.
+                        and finally to the Google Play Store (coming soon).
                     </p>
                     <p className="text-gray-600 text-lg mt-4 mb-8">
                         Out of all the projects I've built, CHERRY Mobile is my favorite.
                         It is a project that I can confidently say I'm proud of and has the potential to help
-                        many people track their meals and improve their nutrition.
+                        many people reach their fitness goals.
                         I hope to continue improving it in the future by adding more features and expanding its reach.
                     </p>
                     <p className="text-gray-600 text-lg mt-4 mb-8">
