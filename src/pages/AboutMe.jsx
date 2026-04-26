@@ -14,9 +14,9 @@ function AboutMe() {
             <div className="flex flex-col mb-6 justify-start text-start items-start lg:max-w-4xl">
                 <h1 className=" text-3xl md:text-5xl font-bold text-gray-900 mb-4">Hello, I'm Josh.</h1>
                 <p className="text-gray-600 text-lg leading-relaxed">
-                    Hello! 👋 I am a Software Engineer III at <a href='https://www.usaa.com/' target="_blank" className="underline">USAA</a> with a B.S. in Computer Science from the University at Albany.</p>
+                    Hello! 👋 I am a Software Engineer at <a href='https://www.visa.com/' target="_blank" className="underline">VISA</a> with a B.S. in Computer Science from the University at Albany.</p>
                 <p className="text-gray-600 text-lg leading-relaxed mt-2">
-I have over 10 years of development experience which began when I started developing Minecraft server plugins with the <a href='https://dev.bukkit.org/' target="_blank" className="underline">Bukkit API</a> at age 11. Since then, I've gained diverse professional experience — from USAA and the <a href='https://www.ny.gov/' target="_blank" className="underline">New York State Government</a> to making contributions at a local startup. </p>
+I have over 10 years of development experience which began when I started developing Minecraft server plugins with the <a href='https://dev.bukkit.org/' target="_blank" className="underline">Bukkit API</a> at age 11. Since then, I've gained diverse professional experience — from VISA, <a href='https://www.usaa.com/' target="_blank" className="underline">USAA</a>, and the <a href='https://www.ny.gov/' target="_blank" className="underline">New York State Government</a> to making contributions at a local startup. </p>
                 <p className="text-gray-600 text-lg leading-relaxed mt-2">
 Outside of software development you can find me at the gym, on the beach, exploring hiking trails, or hitting the slopes ⛷️.
                 </p>
